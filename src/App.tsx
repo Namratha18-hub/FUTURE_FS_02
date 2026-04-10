@@ -7,6 +7,7 @@ import { AppLayout } from "@/components/AppLayout";
 import AuthPage from "@/pages/AuthPage";
 import DashboardPage from "@/pages/DashboardPage";
 import LeadsPage from "@/pages/LeadsPage";
+import ChartsPage from "@/pages/ChartsPage";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/auth" element={<AuthRoute />} />
             <Route path="/" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
             <Route path="/leads" element={<ProtectedRoute><LeadsPage /></ProtectedRoute>} />
+            <Route path="/charts" element={<ProtectedRoute><ChartsPage /></ProtectedRoute>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AuthProvider>
