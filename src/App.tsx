@@ -7,6 +7,7 @@ import { AppLayout } from "@/components/AppLayout";
 import AuthPage from "@/pages/AuthPage";
 import DashboardPage from "@/pages/DashboardPage";
 import LeadsPage from "@/pages/LeadsPage";
+import ChartsPage from "@/pages/ChartsPage";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();

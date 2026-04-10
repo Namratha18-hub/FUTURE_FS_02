@@ -1,4 +1,4 @@
-import { LayoutDashboard, Users, LogOut, Zap } from "lucide-react";
+import { LayoutDashboard, Users, LogOut, Zap, BarChart3 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -17,6 +17,7 @@ import {
 const navItems = [
   { title: "Dashboard", url: "/", icon: LayoutDashboard },
   { title: "Leads", url: "/leads", icon: Users },
+  { title: "Charts", url: "/charts", icon: BarChart3 },
 ];
 
 export function AppSidebar() {
